@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pangolin&display=swap" rel="stylesheet">
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="box-header"></div>
+        <div class="header">
+          <div class="header-name">Calc</div>
+          <div class="header-theme">THEME
+          <div id="outerContainer">
+        <div id="buttonContainer">
+            <div class="redButton"></div>
+        </div>
+       <div id="legendTextContainer">
+            <div class="legendText" onclick="go_to_1()">1</div><div
+                 class="legendText" onclick="go_to_2()">2</div><div
+                 class="legendText" onclick="go_to_3()">3</div>
+        </div>
+    </div>
+        </div>
+        </div>
+        <div class="content-tengah">
+          <input class="display" id="display" ></input>
+        </div>
+        <div class="content-bawah">
+            <button onclick="inputNUmber('7')" class="button-number">7</button>
+            <button onclick="inputNUmber('8')" class="button-number">8</button>
+            <button onclick="inputNUmber('9')" class="button-number">9</button>
+            <button onclick="inputNUmber('del')" class="button-fungsi-special" id="del">DEL</button><br>
+            <button onclick="inputNUmber('4')" class="button-number">4</button>
+            <button onclick="inputNUmber('5')" class="button-number">5</button>
+            <button onclick="inputNUmber('6')" class="button-number">6</button>
+            <button onclick="inputNUmber('+')" class="button-number">+</button><br>
+            <button onclick="inputNUmber('1')" class="button-number">1</button>
+            <button onclick="inputNUmber('2')" class="button-number">2</button>
+            <button onclick="inputNUmber('3')" class="button-number">3</button>
+            <button onclick="inputNUmber('-')" class="button-number">-</button><br>
+            <button onclick="inputNUmber('.')" class="button-number">.</button>
+            <button onclick="inputNUmber('0')" class="button-number">0</button>
+            <button onclick="inputNUmber('/')" class="button-number">/</button>
+            <button onclick="inputNUmber('*')" class="button-number">x</button>
+            <button onclick="inputNUmber('')" class="button-fungsi-1">RESET</button>
+            <button onclick="inputNUmber('result')" class="button-fungsi-2">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
